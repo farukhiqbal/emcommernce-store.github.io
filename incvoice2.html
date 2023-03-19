@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+<style>
+
+#h1{
+
+font-size: 80px;
+/* font-weight: 300; */
+text-align: center;
+background-color: skyblue;
+
+
+
+
+}
+          
+
+#info{
+
+font-size: 30px;
+font-weight: 500;
+text-align: center;
+
+
+
+
+}
+
+
+.container{
+
+height: 100%;
+width:90% ;
+/* border: 1px solid black; */
+
+}
+ #product1    input{
+margin-top: 40px;
+margin-bottom: 20px;
+border: none;
+outline: none;
+height: 30px;
+width: 500px;
+border-bottom:1px solid black;
+
+
+
+}
+#product2    input{
+margin-top: 10px;
+margin-bottom: 20px;
+border: none;
+outline: none;
+height: 30px;
+width: 500px;
+border-bottom:1px solid black ;
+
+
+
+}
+#product3    input{
+margin-top: 10px;
+margin-bottom: 20px;
+border: none;
+outline: none;
+height: 30px;
+width: 450px;
+border-bottom:1px solid black ;
+
+
+
+}
+#product4    input{
+margin-top: 10px;
+margin-bottom: 20px;
+border: none;
+outline: none;
+height: 30px;
+width: 500px;
+border-bottom:1px solid black ;
+
+
+
+}
+#product5    input{
+margin-top: 10px;
+margin-bottom: 20px;
+border: none;
+outline: none;
+height: 30px;
+width: 400px;
+border-bottom:1px solid black ;
+
+}
+#p1{
+
+font-size: 20px ;
+font-weight: 500;
+text-align: center;
+text-transform: capitalize;
+
+}
+
+#product9{
+
+margin-bottom: 20px;
+
+
+}
+
+#h2{
+
+font-size: 20px;
+text-align: center;
+margin-top: 5px;
+
+}
+
+
+
+.detial{
+
+margin-top: 20px;
+margin-left: 0px;
+margin-bottom: 20px;
+border-left: 1px solid black;
+
+}
+.detial input{
+
+    border: none;
+outline: none;
+
+}
+#name{
+
+margin-left: 30px;
+
+}
+#lname{
+
+margin-left: 30px;
+
+}
+#email{
+
+margin-left: 30px;
+
+}
+ #email input{
+
+width: 330px;
+  
+ }
+
+
+
+#phone{
+
+margin-left: 30px;
+width: 330px;
+}
+#city{
+
+margin-left: 30px;
+width: 330px;
+}
+
+table{
+
+margin-top: 60px;
+margin-left: 30px;
+
+
+}
+
+table th{
+
+border: 1px solid black;
+margin-left: 30px;
+height: 20px;
+width: 150px;
+margin-top: 20px;
+text-align: center;
+
+
+}
+table td{
+margin-left: 10px;
+border: 1px solid black;
+margin-left: 30px;
+height: 20px;
+width: 150px; ;
+font-size: 20px;
+text-align: center;
+}
+#total{
+
+
+margin-left: 30px;
+
+
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+    <h1  id="h1">  Invoice</h1>
+
+<br><br><br>
+
+    <div class="container">
+    <div class="row">
+        <div  class="m-10 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-12">
+                  
+             <div id="info">
+         Personal Information
+             </div>
+
+            <div id="product1">
+                First Name:<input id="fname"type="text">
+                
+               </div>
+               <div id="product2">
+                Last Name :<input id="lname" type="text">
+                
+               </div>
+               <div id="product3">
+                Email :<input id="email"type="text">
+                
+               </div>
+               <div id="product4">
+                City:<input id="city"type="text">
+                
+               </div>
+               <div id="product5">
+                Phone :<input id="phone"type="number">
+                
+               </div>
+               <hr>
+
+
+
+
+               <p   id="p1">your Order</p>
+<br>
+<div id="product6">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lays(Rs.20):<input id="lays"type="number">
+ 
+</div>
+<br>
+<div id="product7">
+  &nbsp;&nbsp;&nbsp;&nbsp;    Sting(Rs.50):<input id="sting"type="number">
+</div>
+<br>
+<div id="product8">
+  &nbsp;&nbsp;&nbsp;&nbsp;    Inmko(Rs.20):<input id="inmko"type="number">
+</div>
+<br>
+<div id="product9">
+  &nbsp;&nbsp;&nbsp;  Diary milk(Rs.20):<input id="diary"type="number">
+</div>
+</div>
+
+
+
+        <div  class="m-10 col-md-6 col-lg-6 col-xl-6 col-xxl-6 col-12">
+
+         <h1 id="h2">your Order Details</h1>
+
+             <div class="detial">
+            <div id="name">
+                 Your First Name: <input type="text"id="fname1">
+            
+            </div>
+            <div id="lname">
+           Last Name   : <input type="text"id="lname1">
+             </div>
+             <div id="email">
+              Email  : <input type="text"id="email1">
+                </div>
+                <div id="city">
+                  City  : <input type="text"id="city1">
+                    </div>
+                    <div id="phone">
+                      Phone   : <input type="number"id="phone1">
+                        </div>
+                             
+             
+            <table >
+            <thead>
+                            <tr >
+              <th>Menu</th>
+              <th>price</th>
+              <th>Quantity</th>
+              <th> Amount</th>
+              
+              </tr>
+            </thead>
+
+               <tbody id="billstatement">
+
+
+
+               </tbody>
+
+
+
+                             </table>   
+                             <br><br><br><br><br><br>
+                             <h1   id="total"> Total Amount = Rs:<span id="amount"></Rs:span></h1>
+
+
+
+
+
+                        </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+
+var inmko_price= 20,lays_price= 20,diary_price=20,sting_price=50;
+var inmko_q= 0,lays_q= 0,diary_q=0,sting_q=0;
+
+  var input =  document.getElementById("fname")
+   var fname=  document.getElementById("fname1")
+
+     var lname = document.getElementById("lname1")
+     var input1 = document.getElementById("lname")
+
+         var phone = document.getElementById("phone1")
+         var input2 = document.getElementById("phone")
+
+      var email=   document.getElementById("email1")
+      var input3=   document.getElementById("email")
+
+      var address  =   document.getElementById("city1")
+      var input4  =   document.getElementById("city")
+
+         var layspriceshow="",stingpriceshow="",inmkopriceshow="",diarypriceshow="";
+
+               input.addEventListener("keyup",function(){
+
+        fname.value =input.value
+            
+                 })
+
+                 input1.addEventListener("keyup",function(){
+
+                    lname.value =input1.value
+                    
+    
+         })
+
+
+
+         input2.addEventListener("keyup",function(){
+
+                 phone.value =input2.value
+    
+         })
+
+
+         input3.addEventListener("keyup",function(){
+
+                  email.value =input3.value
+    
+
+         })
+
+         input4.addEventListener("keyup",function(){
+
+                     address.value =input4.value
+
+
+})
+
+
+                  //  part 2
+
+document.getElementById("lays").addEventListener("keyup",function(){
+    if( this.value==""||this.value==0){
+
+               layspriceshow="";
+               lays_q=0;
+               showbill();
+
+    }
+          else{
+    lays_q= this.value;
+                layspriceshow =" <tr> <td>lays</t><td> Rs: "+lays_price+"</td><td>"+lays_q+"</td><td> "+lays_price+"x"+lays_q+"= "+lays_price*lays_q+"</td> </tr>"
+                showbill();
+          }
+
+
+});
+
+
+document.getElementById("sting").addEventListener("keyup",function(){
+    if( this.value==""||this.value== 0){
+   sting_q=0;
+                          stingpriceshow="";
+showbill();
+    }
+          else{
+    sting_q = this.value
+               stingpriceshow=" <tr> <td>sting</t><td> Rs: "+sting_price+"</td><td>"+sting_q+"</td><td> "+sting_price+"x"+sting_q+"= "+sting_price*sting_q+"</td> </tr>"
+showbill();
+          }
+});
+
+
+
+document.getElementById("inmko").addEventListener("keyup",function(){
+    if( this.value==""||this.value== 0){
+                    inmko_q=0;
+                          inmkopriceshow="";
+showbill();
+    }
+          else{
+    inmko_q = this.value
+               inmkopriceshow=" <tr> <td>inmko</t><td> Rs: "+inmko_price+"</td><td>"+inmko_q+"</td><td> "+inmko_price+"x"+inmko_q+"= "+inmko_price*inmko_q+"</td> </tr>"
+showbill();
+          }
+});
+
+document.getElementById("diary").addEventListener("keyup",function(){
+    if( this.value==""||this.value== 0){
+    diary_q=0;
+                          diarypriceshow="";
+showbill();
+    }
+          else{
+    diary_q = this.value
+               diarypriceshow=" <tr> <td>diary Milk</t><td> Rs: "+diary_price+"</td><td>"+diary_q+"</td><td> "+diary_price+"x"+diary_q+"= "+diary_price*diary_q+"</td> </tr>"
+showbill();
+          }
+});
+
+
+function showbill(){
+
+document.getElementById("billstatement").innerHTML= layspriceshow+stingpriceshow+inmkopriceshow+diarypriceshow;
+document.getElementById("amount").innerHTML=lays_price*lays_q+sting_price*sting_q+inmko_price*inmko_q+diary_price*diary_q;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
